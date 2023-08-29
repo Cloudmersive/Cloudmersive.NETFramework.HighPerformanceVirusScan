@@ -38,7 +38,7 @@ namespace HighPerformanceVirusScanSample
                 try
                 {
                     // Advanced Scan a file for viruses
-                    VirusScanAdvancedResult result = apiInstance.ScanFileAdvanced(inputFile, allowExecutables, allowInvalidFiles, allowScripts, allowPasswordProtectedFiles, allowMacros, allowXmlExternalEntities, allowInsecureDeserialization, allowHtml, restrictFileTypes);
+                    VirusScanAdvancedResult result = apiInstance.ScanFileAdvanced(inputFile, allowExecutables, allowInvalidFiles, allowScripts, allowPasswordProtectedFiles, allowMacros, allowXmlExternalEntities, allowInsecureDeserialization, allowHtml, false, restrictFileTypes);
                     Debug.WriteLine(result);
                 }
                 catch (Exception e)
